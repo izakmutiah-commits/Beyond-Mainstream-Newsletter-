@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyond Mainstream — Media Kit</title>
+<meta name="description" content="Unorthodox market analysis and deeply reported features on Africa's socioeconomic realities. Media kit for partners and sponsors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14171c;
+    --ink-soft: #1e232b;
+    --paper: #ece5d4;
+    --paper-dim: #cfc6ac;
+    --clay: #b5502f;
+    --teal: #3d7d74;
+    --line: rgba(236, 229, 212, 0.16);
+    --line-strong: rgba(236, 229, 212, 0.32);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- Header / Hero ---------- */
+  header.hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin: 0 0 18px;
+  }
+
+  h1.masthead {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(2.6rem, 9vw, 4.2rem);
+    line-height: 0.98;
+    margin: 0 0 20px;
+    letter-spacing: -0.01em;
+  }
+
+  h1.masthead em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--clay);
+  }
+
+  .tagline {
+    font-size: 1.05rem;
+    color: var(--paper-dim);
+    max-width: 46ch;
+    margin: 0 0 28px;
+  }
+
+  .publisher-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--paper-dim);
+    letter-spacing: 0.02em;
+  }
+
+  .publisher-line strong { color: var(--paper); font-weight: 500; }
+
+  /* ---------- Receipt (signature element) ---------- */
+  .receipt-shell {
+    margin: 44px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .receipt {
+    width: 100%;
+    max-width: 380px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 26px 22px 22px;
+    position: relative;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5);
+    --notch: 14px;
+    clip-path: polygon(
+      0% var(--notch), 3% 0%, 6% var(--notch), 9% 0%, 12% var(--notch), 15% 0%, 18% var(--notch), 21% 0%,
+      24% var(--notch), 27% 0%, 30% var(--notch), 33% 0%, 36% var(--notch), 39% 0%, 42% var(--notch), 45% 0%,
+      48% var(--notch), 51% 0%, 54% var(--notch), 57% 0%, 60% var(--notch), 63% 0%, 66% var(--notch), 69% 0%,
+      72% var(--notch), 75% 0%, 78% var(--notch), 81% 0%, 84% var(--notch), 87% 0%, 90% var(--notch), 93% 0%,
+      96% var(--notch), 99% 0%, 100% var(--notch),
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  .receipt .r-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    margin-bottom: 2px;
+  }
+
+  .receipt .r-sub {
+    text-align: center;
+    font-size: 10.5px;
+    color: #5c5648;
+    margin-bottom: 16px;
+  }
+
+  .r-dashes {
+    border-top: 1px dashed #8a8370;
+    margin: 14px 0;
+  }
+
+  .r-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12.5px;
+    padding: 5px 0;
+  }
+
+  .r-row .label { color: #5c5648; }
+  .r-row .val { font-weight: 600; }
+
+  .r-row .val.clay { color: var(--clay); }
+  .r-row .val.teal { color: var(--teal); }
+
+  .r-footer {
+    text-align: center;
+    font-size: 9.5px;
+    color: #8a8370;
+    margin-top: 16px;
+    letter-spacing: 0.04em;
+  }
+
+  .r-loading {
+    text-align: center;
+    font-size: 11px;
+    color: #8a8370;
+    padding: 8px 0;
+  }
+
+  /* ---------- Sections ---------- */
+  section {
+    padding: 52px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin: 0 0 16px;
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin: 0 0 18px;
+  }
+
+  p.body-text {
+    color: var(--paper-dim);
+    font-size: 1rem;
+    max-width: 62ch;
+    margin: 0 0 14px;
+  }
+
+  .coverage-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .coverage-tags span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    border: 1px solid var(--line-strong);
+    padding: 6px 12px;
+    border-radius: 100px;
+    color: var(--paper);
+  }
+
+  /* ---------- Editions ---------- */
+  .editions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .edition-row {
+    display: grid;
+    grid-template-columns: 44px 1fr auto;
+    gap: 16px;
+    align-items: baseline;
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+  }
+
+  .edition-row:first-child { border-top: none; }
+
+  .edition-rank {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--paper-dim);
+  }
+
+  .edition-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 0 4px;
+  }
+
+  .edition-hook {
+    color: var(--paper-dim);
+    font-size: 0.88rem;
+    margin: 0;
+  }
+
+  .edition-impressions {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--teal);
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .editions-empty {
+    color: var(--paper-dim);
+    font-size: 0.92rem;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  /* ---------- Angle ---------- */
+  .angle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  @media (max-width: 560px) {
+    .angle-grid { grid-template-columns: 1fr; }
+  }
+
+  .angle-col .angle-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .angle-col.mainstream .angle-label { color: var(--paper-dim); }
+  .angle-col.beyond .angle-label { color: var(--clay); }
+
+  .angle-col p {
+    font-size: 0.92rem;
+    color: var(--paper-dim);
+    margin: 0;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--clay);
+    color: var(--paper);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+
+  footer {
+    padding: 32px 0 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--paper-dim);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Media Kit</p>
+    <h1 class="masthead">Beyond<br><em>Mainstream</em></h1>
+    <p class="tagline">Unorthodox market analysis and deeply reported features that reveal complex on-the-ground socioeconomic realities — moving past mainstream narratives to explore what actually drives the modern African economy.</p>
+    <p class="publisher-line">Published via <strong>Times Digital Kenya</strong> &nbsp;·&nbsp; LinkedIn Newsletter + Substack</p>
+
+    <div class="receipt-shell">
+      <div class="receipt">
+        <div class="r-title">BEYOND MAINSTREAM</div>
+        <div class="r-sub">LIVE READERSHIP RECEIPT</div>
+        <div class="r-dashes"></div>
+        <div id="receipt-body">
+          <div class="r-row"><span class="label">NEWSLETTER SUBSCRIBERS</span><span class="val clay">500–2,000</span></div>
+          <div class="r-row"><span class="label">EDITIONS PUBLISHED</span><span class="val teal">25+</span></div>
+          <div class="r-row"><span class="label">DISTRIBUTION</span><span class="val">LinkedIn + Substack</span></div>
+        </div>
+        <div class="r-dashes"></div>
+        <div class="r-footer" id="receipt-timestamp">FIGURES AS OF AUG 2026</div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <p class="section-label">About</p>
+    <h2>Reporting from the ground up, not the boardroom down.</h2>
+    <p class="body-text">Beyond Mainstream covers human-centric macroeconomics, fintech, and inclusive growth across Sub-Saharan Africa — told through the people actually navigating these systems, not just the institutions describing them.</p>
+    <div class="coverage-tags">
+      <span>Macroeconomics</span>
+      <span>Fintech &amp; Mobile Money</span>
+      <span>Financial Inclusion</span>
+      <span>Informal Economy</span>
+      <span>Sub-Saharan Africa</span>
+    </div>
+  </section>
+
+  <section id="editions">
+    <p class="section-label">Sample Editions</p>
+    <h2>Read the reporting</h2>
+    <p class="body-text">25+ editions published to date, covering fintech access, informal-sector economics, and the policy gaps between them.</p>
+    <div class="editions-list">
+      <a class="edition-row" href="https://www.linkedin.com/newsletters/" target="_blank" rel="noopener">
+        <span class="edition-rank">01</span>
+        <span>
+          <p class="edition-title">Read on LinkedIn Newsletter</p>
+          <p class="edition-hook">Full edition archive, published via Times Digital Kenya</p>
+        </span>
+        <span class="edition-impressions">→</span>
+      </a>
+      <a class="edition-row" href="https://beyondmainstream.substack.com" target="_blank" rel="noopener">
+        <span class="edition-rank">02</span>
+        <span>
+          <p class="edition-title">Read on Substack</p>
+          <p class="edition-hook">Dispatches and original notes</p>
+        </span>
+        <span class="edition-impressions">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="angle">
+    <p class="section-label">Editorial Angle</p>
+    <h2>Why this coverage is different</h2>
+    <div class="angle-grid">
+      <div class="angle-col mainstream">
+        <p class="angle-label">The Mainstream Narrative</p>
+        <p>Africa's growth story told through GDP charts, investor summits, and policy press releases.</p>
+      </div>
+      <div class="angle-col beyond">
+        <p class="angle-label">The Beyond Mainstream Reality</p>
+        <p>The trader, the boda rider, the market mama — the actual mechanics of money moving through systems built without them in mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-bottom: none;">
+    <p class="section-label">Partnerships</p>
+    <h2>Interested in reaching this audience?</h2>
+    <p class="body-text">Get in touch about sponsorships, syndication, or editorial partnerships.</p>
+    <a href="mailto:izakmutiah@gmail.com" class="contact-cta">Start a conversation →</a>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">© Beyond Mainstream — a Times Digital Kenya publication.</div>
+</footer>
+
+</body>
+</html>
